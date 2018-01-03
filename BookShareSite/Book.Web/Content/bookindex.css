@@ -1,0 +1,9 @@
+﻿.book_item_active {
+    background-color: #FFFFFF;
+    border: 1px solid #99BBD5;
+}
+
+.book_item_inactive {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+}

@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "添加书评";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row large-margin-top" ng-controller="ReviewAddController" ng-cloak>
+    @*<div class="row margin-bottom margin-left-clear line">
+            <button class="btn btn-default" ng-click="back()">返回</button>
+        </div>*@
+    <div class="large-margin-top" style="font-size:30px; color:#6E4E3C"><b>添加书评</b></div>
+    <p style="font-size:13px;color:#666;" class="margin-top">写下你对这本书的感悟，分享给更多的小伙伴· · · · · ·</p>
+    <hr />
+    <div class="row margin-bottom line">@{Html.RenderPartial("_BookItem");}</div>
+    <div class="margin-bottom" style="font-size:16px;"><b>我的想法</b></div>
+    <textarea class="textarea" ng-model="content" placeholder="添加内容" rows="8"></textarea>
+    <button class="btn btn-default margin-top float-right" ng-click="Save()">保存</button>
+    <span>{{saveResult}}</span>
+</div>
+
+<script src="~/Scripts/services/review.service.js"></script>
+<script src="~/Scripts/services/book.service.js"></script>
+<script src="~/Scripts/controllers/review.add.controller.js"></script>
+<script src="~/Scripts/services/util.service.js"></script>

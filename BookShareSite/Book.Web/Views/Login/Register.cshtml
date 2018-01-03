@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "注册";
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+<div ng-controller="BookAddController" ng-cloak>
+    <div class="large-margin-top" style="font-size:30px; color:#6E4E3C"><b>欢迎加入爱读书</b></div>
+    <p style="font-size:13px;color:#666;" class="margin-top">在这里可以记录读书足迹，发现更多有趣的书籍· · · · · ·</p>
+    <hr />
+    <div class="form-group">
+        <label for="title">邮箱</label>
+        <input id="title" required type="text" class="form-control" placeholder="邮箱" ng-model="vm.Title" />
+    </div>
+    <div class="form-group">
+        <label for="originTitle">密码</label>
+        <input id="originTitle" required type="text" class="form-control" placeholder="密码" ng-model="vm.OriginTitle" />
+    </div>
+    <div class="form-group">
+        <label for="originTitle" required>名字<span>(第一印象很重要，起个响亮的名字吧)</span></label>
+        <input id="originTitle" type="text" class="form-control" placeholder="名字" ng-model="vm.OriginTitle" />
+    </div>
+    <div class="form-group">
+        <label for="summary">个性签名</label>
+        <textarea class="textarea" id="summary" ng-model="content" placeholder="添加内容" rows="8"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="image">你的头像</label>
+        <input type="file" id="image" required />
+    </div>
+    <button type="submit" class="btn btn-default float-right">保存</button>
+</div>
+<script src="~/Scripts/controllers/book.add.controller.js"></script>
+<script src="~/Scripts/services/book.service.js"></script>
+

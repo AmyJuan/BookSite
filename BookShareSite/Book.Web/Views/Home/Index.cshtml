@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "首页";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/home.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+<div class="row margin-top" ng-controller="HomeIndexController" ng-cloak>
+    <div class="row">
+        <b style="font-size:30px;float:left; color:#6E4E3C;margin-top:10px;">爱读书</b>
+        <div class="container float-left col-md-5" style="margin-top:10px;">
+            <div class="input-group">
+                <input type="text" class="form-control input-lg" placeholder="书名、作者" style="height:40px;width:800px;" />
+                <span class="input-group-addon btn btn-primary" style="width:0%;">搜索</span>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row large-margin-top">
+        <div class="col-md-6">
+            <div class="row title"><b>精选推荐</b><a style="font-size:13px;">(更多)</a></div>
+            <div class="row mark">
+                <div class="margin-left float-left">
+                    <img style="width:70px;height:80px;" ng-src="https://img3.doubanio.com/mpic/s28372774.jpg" src="https://img3.doubanio.com/mpic/s28372774.jpg">
+                </div>
+                <div class="margin-left col-md-8">
+                    <div>
+                        <b>错误的行为</b>
+                    </div>
+                    <div class="review">
+                        准备好改变你对经济学的看法了吗？ 纵观理查德·泰勒的职业生涯，我们发现他的研究始终围绕着一个激进的观点开展：经济活动的主体是人，即拥有可预测行为且容易犯错的个体。
+                    </div>
+                </div>
+            </div>
+            <div class="row mark large-margin-top">
+                <div class="margin-left float-left">
+                    <img style="width:70px;height:80px;" ng-src="https://img3.doubanio.com/mpic/s1234142.jpg" src="https://img3.doubanio.com/mpic/s1234142.jpg">
+                </div>
+                <div class="margin-left col-md-8">
+                    <div>
+                        <b>金融炼金术</b>
+                    </div>
+                    <div class="review">
+                        本书是索罗斯的投资日记。读者可以从中欣赏到索罗斯如何分析个股、如何把握市场转变的时机、如何面对不利的市场行情并及时调整对策，从而在风云变幻的金融市场中立于不败之地的精彩艺术。
+                    </div>
+                </div>
+            </div>
+            <div class="row mark large-margin-top">
+                <div class="margin-left float-left">
+                    <img style="width:70px;height:80px;" ng-src="https://img1.doubanio.com/mpic/s27196248.jpg" src="https://img1.doubanio.com/mpic/s27196248.jpg">
+                </div>
+                <div class="margin-left col-md-8">
+                    <div>
+                        <b>反脆弱</b>
+                    </div>
+                    <div class="review">
+                        在《反脆弱》一书中，塔勒布告诉我们在不确定的世界中的生存法则，他找到并定义了“反脆弱”类事物：每一个事物都会从波动中得到利益或蒙受损失，脆弱性是指因为波动和不确定而承受损失，反脆弱性则是指让自己避免这些损失，甚至从混乱和不确定中获利。
+                    </div>
+                </div>
+            </div>
+            <div class="row mark large-margin-top">
+                <div class="margin-left float-left">
+                    <img style="width:70px;height:80px;" ng-src="https://img3.doubanio.com/mpic/s2505152.jpg" src="https://img3.doubanio.com/mpic/s2505152.jpg">
+                </div>
+                <div class="margin-left col-md-8">
+                    <div>
+                        <b>巴菲特致股东的信</b>
+                    </div>
+                    <div class="review">
+                        巴菲特当然没有写过什么书，但他每年都要在伯克希尔・哈撒韦的公司年报中给股东写一封信，总结在过去一年中的成败得失。从挑选经理、选择投资目标、评估公司，到有效地使用金融信息，这些信涵盖面甚广。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <div style="color:#111;font-size:16px;" class="margin-bottom">什么是精选推荐· · · · · · </div>
+            <div style="color:#666;font-size:13px" class="margin-bottom">
+                这是爱读书给你的个人推荐。通过分析你读过、标记、评价的行为，会从海量数据里挑选你会感兴趣的内容推荐给你。
+                <br />
+                <br />
+                你用的越多，共享数据越丰富，推荐得就会越准确。
+            </div>
+            <div>
+                <img src="~/fonts/read.png" />
+            </div>
+            <div class="title"><b>我的足迹</b></div>
+            <div>
+                <p class="track">2015我的读书<span class="track_one">总量</span>为<span class="track_two">50</span>本</p>
+                <p class="track">2016我的读书<span class="track_one">总量</span>为<span class="track_two">54</span>本</p>
+                <canvas id="canvas" class="large-margin-top" height="450" width="600"></canvas>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="~/Scripts/controllers/home.index.controller.js"></script>
+<script src="~/Scripts/services/user.service.js"></script>
+<script src="~/Scripts/services/util.service.js"></script>
+<script src="~/Scripts/Chart.js"></script>
+<script src="~/Scripts/Chart.min.js"></script>

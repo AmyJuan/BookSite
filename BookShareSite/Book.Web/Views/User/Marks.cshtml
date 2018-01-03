@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "我的标记";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/user.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+<div class="row margin-top" ng-controller="UserMarksController" ng-cloak>
+    <div class="row margin-bottom">
+        <img ng-src="{{user.Image}}" class="float-left" style="width:50px;height:50px;border-radius:50px;" />
+        <div class="margin-left float-left margin-top" style="font-size:20px;"><b>我的标记(143)</b></div>
+        <div class="container float-right col-md-5" style="margin-top:10px;">
+            <div class="input-group">
+                <input type="text" class="form-control input-lg" placeholder="书名、作者" style="height:40px;width:800px;" />
+                <span class="input-group-addon btn btn-primary" style="width:0%;">搜索</span>
+            </div>
+        </div>
+    </div>
+    <div><span style="color:#999;">时间排序</span> <a class="margin-left">书名排序</a></div>
+    <div class="row mark">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:80px;" ng-src="https://img1.doubanio.com/mpic/s2659208.jpg" src="https://img1.doubanio.com/mpic/s2659208.jpg">
+        </div>
+        <div class="margin-left col-md-10">
+            <div><b>月亮和六便士</b>(2016-12-28)<a>(删除)</a> </div>
+            <div>简介</div>
+            <div class="review">
+                一个英国证券交易所的经纪人，本已有牢靠的职业和地位、美满的家庭，但却迷恋上绘画，
+                像“被魔鬼附了体”，突然弃家出走，到巴黎去追求绘画的理想。他的行径没有人能够理解。
+                他在异国不仅肉体受着贫穷和饥饿煎熬...
+            </div>
+        </div>
+    </div>
+    <div class="row mark">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:80px;" ng-src="https://img1.doubanio.com/mpic/s4243447.jpg" src="https://img1.doubanio.com/mpic/s4243447.jpg">
+        </div>
+        <div class="margin-left col-md-10">
+            <div>
+                <b>送你一颗子弹</b>(2016-12-26)<a>(删除)</a>
+            </div>
+            <div>简介</div>
+            <div class="review">
+                这本书里记录的是作者2005—2009年左右(尤其是2006—2007年)生活里的点点滴滴。在这本书里，被“审视”的东西杂七杂八，有街上的疯老头，
+                有同宿舍的室友，有爱情、电影和书，大到制度，小到老鼠。由于我写这些东西的时候，出发点并不是写一本书，
+                所以不同文章往往风格迥异，长短不一，质量不均，随着社会形势、荷尔蒙周期以及我逃避生活的力度而起伏。
+            </div>
+        </div>
+    </div>
+    <div class="row mark">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:80px;" ng-src="https://img3.doubanio.com/mpic/s29011411.jpg" src="https://img3.doubanio.com/mpic/s29011411.jpg">
+        </div>
+        <div class="margin-left col-md-10">
+            <div>
+                <b>最后的华尔兹</b>(2016-12-20)<a>(删除)</a>
+            </div>
+            <div>简介</div>
+            <div class="review">
+                阿拉巴马小姐是一位出身美国上流社会的富家小姐。她有着让人艳羡的美貌和令人费解的神经质，许多男孩儿为她着迷，
+                甚至有飞行员为了讨她欢心而殒命。阿拉巴马小姐一直在爱情边缘游走，直到遇到了英俊而才华横溢的画家大卫。
+                然而与大卫的婚姻和女儿邦尼并不能让阿拉巴马小姐安于平静的生活...
+            </div>
+        </div>
+    </div>
+    <div class="row mark">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:80px;" ng-src="https://img3.doubanio.com/mpic/s11193945.jpg" src="https://img3.doubanio.com/mpic/s11193945.jpg">
+        </div>
+        <div class="margin-left col-md-10">
+            <div>
+                <b>帝国造就了我</b>(2016-11-23)<a>(删除)</a>
+            </div>
+            <div>简介</div>
+            <div class="review">
+                1919年，刚从“一战”退伍回家的廷克勒（1898—1939）生活前景灰暗，战争的阴影挥之不去而想在战后找到工作并不容易。
+                所以当他从当地报纸上看到上海公共租界巡捕房（Shanghai Municipal Police）要招募警员时，他决定尝试一下。他被...
+            </div>
+        </div>
+    </div>
+    <Pager class="margin-bottom" total="pageTotal" index="pageIndex" previous="previous()" next="next()"></Pager>
+</div>
+<script src="~/Scripts/controllers/user.marks.controller.js"></script>
+<script src="~/Scripts/services/user.service.js"></script>
+<script src="~/Scripts/services/util.service.js"></script>
+<script src="~/Scripts/directives/pager.directive.js"></script>

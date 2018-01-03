@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewBag.Title = "我的书评";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/user.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+<div class="row margin-top" ng-controller="UserReviewsController" ng-cloak>
+    <div class="row margin-bottom">
+        <img ng-src="{{user.Image}}" class="float-left" style="width:50px;height:50px;border-radius:50px;" />
+        <div class="margin-left float-left margin-top" style="font-size:20px;"><b>我的书评(46)</b></div>
+        @*<div class="float-right">
+            <input id="search_input" class="col-md-9" ng-model="searchwords" type="text" placeholder="请输入图书名称" />
+            <input type="button" id="search_btn" ng-click="search()" value="搜索" />
+        </div>*@
+        <div class="container float-right col-md-5" style="margin-top:10px;">
+            <div class="input-group">
+                <input type="text" class="form-control input-lg" placeholder="书名、作者" style="height:40px;width:800px;" />
+                <span class="input-group-addon btn btn-primary" style="width:0%;">搜索</span>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row large-margin-top">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:80px;" ng-src="https://img1.doubanio.com/mpic/s2659208.jpg" src="https://img1.doubanio.com/mpic/s2659208.jpg">
+        </div>
+        <div class="margin-left col-md-10">
+            <div class="margin-bottom">
+                <b>月亮和六便士</b>(2016-12-28)
+            </div>
+            <div style="border: 1px solid #cccccc;height:25px;border-radius:10px;background-color:#EDF4ED;width:150px;padding:0 10px;" data-toggle="collapse" data-target="#demo">
+                这里显示全部内容
+            </div>
+            <div id="demo" class="collapse in margin-top review">
+                <div><a>修改</a><a class="margin-left">删除</a></div>
+                世界是无情的，残酷的。 我们生到人世间没有人知道为了什么，我们死后没有人知道到何处去。
+                我们自甘卑屈。我们必须看到冷清寂寥的美妙。
+                在生活中我们一定不要出风头、露头角，惹起命运对我们注目。
+                让我们去寻求那些淳朴、敦厚的人的爱情吧。
+                他们的愚昧远比我们的知识更为可贵。
+                让我们保持着沉默，满足于自己小小的天地，像他们一样平易温顺吧。这就是生活的智慧。
+            </div>
+        </div>
+    </div>
+    <div class="row large-margin-top">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:80px;" ng-src="https://img1.doubanio.com/mpic/s4243447.jpg" src="https://img1.doubanio.com/mpic/s4243447.jpg">
+        </div>
+        <div class="margin-left col-md-10">
+            <div class="margin-bottom">
+                <b>送你一颗子弹</b>(2016-12-26)
+            </div>
+            <div style="border: 1px solid #cccccc;height:25px;border-radius:10px;background-color:#EDF4ED;width:150px;padding:0 10px;" data-toggle="collapse" data-target="#demo1">
+                这里显示全部内容
+            </div>
+            <div id="demo1" class="collapse in margin-top review">
+                <div><a>修改</a><a class="margin-left">删除</a></div>
+                那些与你毫无关系的人，就是毫无关系的，永远是毫无关系的。从认识的第一天开始，其实你就知道。
+                就算是笑得甜甜蜜蜜，就算是有无关痒痛的来往，就算你努力经营这段关系。
+                而那些与你有关的，就是与你有关的，是逃也逃不掉的，就算你们只见过三次，就算你们三年彼此才搭理一次，
+                就算是你简直想不起他或者她的样子，就算是你们隔着十万八千里。
+                有些人注定是你生命里的癌症，而有些人只是一个喷嚏而已。这一切，据说都是“因了冥冥中的缘分”。
+            </div>
+        </div>
+    </div>
+    <div class="row large-margin-top">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:80px;" ng-src="https://img3.doubanio.com/mpic/s4468484.jpg" src="https://img3.doubanio.com/mpic/s4468484.jpg">
+        </div>
+        <div class="margin-left col-md-10">
+            <div class="margin-bottom">
+                <b>局外人</b>(2016-12-12)
+            </div>
+            <div style="border: 1px solid #cccccc;height:25px;border-radius:10px;background-color:#EDF4ED;width:150px;padding:0 10px;" data-toggle="collapse" data-target="#demo2">
+                这里显示全部内容
+            </div>
+            <div id="demo2" class="collapse in margin-top review">
+                <div><a>修改</a><a class="margin-left">删除</a></div>
+                我以这种方式生活过，我也可能以另外一种方式生活，我干过这，没有干过那，我做过这样的事，而没有做过那样的事。
+                而以后呢？似乎我过去一直等待的就是这一分钟，就是也许我会被判无罪的黎明。
+                没有任何东西，没有任何东西是有重要性的，我很明白是为什么。他也知道为什么。
+                在我所度过的整个那段荒唐生活期间，一种阴暗的气息从我未来前途的深处向我扑面而来，它穿越了尚未来到的岁月，
+                所到之处，使人们曾经向我建议的所有一切彼此之间不再有高下优劣的差别了，未来的生活也不比我以往的生活更真切实在。
+            </div>
+        </div>
+    </div>
+    <div class="row large-margin-top">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:80px;" ng-src="https://img3.doubanio.com/mpic/s1305500.jpg" src="https://img3.doubanio.com/mpic/s1305500.jpg">
+        </div>
+        <div class="margin-left col-md-10">
+            <div class="margin-bottom">
+                <b>伟大的博弈</b>(2016-12-02)
+            </div>
+            <div style="border: 1px solid #cccccc;height:25px;border-radius:10px;background-color:#EDF4ED;width:150px;padding:0 10px;" data-toggle="collapse" data-target="#demo3">
+                这里显示全部内容
+            </div>
+            <div id="demo3" class="collapse in margin-top review">
+                <div><a>修改</a><a class="margin-left">删除</a></div>
+                武汉几日，沿涂终于读完了《伟大的博弈》。
+                其实从读完宋鸿兵先生的《货币战争》之后，有点拒绝读关于金融史方面的书，因为生怕又是一场浪费时间，只到上个月末，
+                在书店，偶然发现了这本戈登的《伟大的博弈》，才有了让我觉得读金融史也可以这么静然。呵呵，或许是最近读历史较多的缘故吧，历史真是很美妙。
+                书中讲述的故事涵盖350年的历史，人类经济活动的主体从使用铁犁的农民变成了使用计算机的白领；
+                人类对外层空间的观察工具，从伽利略手工制造的两寸望远镜变成了半径10米的成对凯克望远镜，
+                从不能辨认土星的光环，到距地球120亿光年的太空，人类的信息从马车的速度传递发展到以光速传播。
+            </div>
+        </div>
+    </div>
+    <div class="row large-margin-top">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:80px;" ng-src="https://img3.doubanio.com/mpic/s3357241.jpg" src="https://img3.doubanio.com/mpic/s3357241.jpg">
+        </div>
+        <div class="margin-left col-md-10">
+            <div class="margin-bottom">
+                <b>增长与波动</b>(2016-11-16)
+            </div>
+            <div style="border: 1px solid #cccccc;height:25px;border-radius:10px;background-color:#EDF4ED;width:150px;padding:0 10px;" data-toggle="collapse" data-target="#demo4">
+                这里显示全部内容
+            </div>
+            <div id="demo4" class="collapse in margin-top review">
+                <div><a>修改</a><a class="margin-left">删除</a></div>
+                在美国，十九世纪八十年代是非常繁荣的十年，一直到1892年之前它经历了几乎没有中断的增长。……这是次大陆的一种古典情况，
+                它的迅速增长是由于开发了供自己使用的本国资源——苏联在二十世纪三十年代和欧洲共同市场在二十世纪六十年代都是这种情况，
+                而且，现在中国和印度也都打算这样做。一旦经济开始发展，落后的经济就会比先进的经济增长得更快。
+            </div>
+        </div>
+    </div>
+    <Pager class="margin-bottom" total="pageTotal" index="pageIndex" previous="previous()" next="next()"></Pager>
+</div>
+<script src="~/Scripts/controllers/user.reviews.controller.js"></script>
+<script src="~/Scripts/services/user.service.js"></script>
+<script src="~/Scripts/services/util.service.js"></script>
+<script src="~/Scripts/directives/pager.directive.js"></script>

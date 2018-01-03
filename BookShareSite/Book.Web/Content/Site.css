@@ -1,0 +1,145 @@
+﻿html {
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    font-family: Verdana;
+    font-size: 16px;
+    line-height: 1.23076923;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size:16px;
+}
+
+#content {
+    min-height: 100%;
+    position: relative;
+    margin: 0 220px;
+}
+
+#main {
+    padding-bottom: 50px;
+}
+
+#footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+.float-right {
+    float: right;
+}
+
+.small-margin {
+    margin: 5px;
+}
+
+.margin {
+    margin: 10px;
+}
+
+.large-margin {
+    margin: 15px;
+}
+
+.large-margin-top {
+    margin-top: 15px;
+}
+
+.margin-left-clear {
+    margin-left: 0px;
+}
+
+.margin-left {
+    margin-left: 10px;
+}
+
+.large-margin-left {
+    margin-left: 20px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.float-left {
+    float: left;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.small-margin-bottom {
+    margin-bottom: 5px;
+}
+
+.large-margin-right {
+    margin-right: 40px;
+}
+
+.small-top {
+    top: 5px;
+}
+
+.top {
+    top: 10px;
+}
+
+.large-top {
+    top: 15px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #AFC6E0;
+}
+
+.line {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.text-green {
+    color: rgb(51, 191, 111);
+}
+
+.large-margin-bottom {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,32 @@
+﻿.review {
+    border: 1px solid #CCCCCC;
+    background-color: #CCCCCC;
+    padding: 10px;
+}
+
+.title {
+    font-size: 13px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+    .title b {
+        font-size: 16px;
+    }
+
+.track {
+    font-size: 20px;
+}
+
+.track_one {
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFA030;
+}
+
+.track_two {
+    font-weight: bold;
+    font-size: 28px;
+    color: #FFA030;
+}

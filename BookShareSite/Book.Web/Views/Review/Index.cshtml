@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-controller="ReivewIndexController" ng-cloak>
+    Review    <span style="color:red;">{{addResult}}</span>
+</div>
+
+<script src="~/Scripts/services/review.service.js"></script>
+<script src="~/Scripts/controllers/review.index.controller.js"></script>
+<script src="~/Scripts/services/util.service.js"></script>

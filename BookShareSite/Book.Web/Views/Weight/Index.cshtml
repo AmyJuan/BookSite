@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "WeightIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/bookindex.css" rel="stylesheet" />
+<div ng-controller="WeightIndexController" ng-cloak>
+    <div class="row large-margin-top">
+        <div class="col-md-3">
+            <div style="border: 1px solid #cccccc;height:35px;background-color:#EDF4ED;width:150px;padding:0 10px;"
+                 data-toggle="collapse" data-target="#demo1">用户管理</div>
+            <div id="demo1" class="collapse in margin-top review"></div>
+            <div style="border: 1px solid #cccccc;height:35px;background-color:#EDF4ED;width:150px;padding:0 10px;"
+                 data-toggle="collapse" data-target="#demo2">图书管理</div>
+            <div id="demo2" class="collapse in margin-top review"></div>
+            <div style="border: 1px solid #cccccc;height:35px;background-color:#EDF4ED;width:150px;padding:0 10px;"
+                 data-toggle="collapse" data-target="#demo4">算法参数管理</div>
+            <div id="demo4" class="collapse in margin-top review">
+                <p style="margin-left:10px;color:blue;">权重规则参数</p>
+                <p style="margin-left:10px;color:dimgray;">关联规则参数</p>
+            </div>
+            <div style="border: 1px solid #cccccc;height:35px;background-color:#EDF4ED;width:150px;padding:0 10px;"
+                 data-toggle="collapse" data-target="#demo3">权限管理</div>
+            <div id="demo3" class="collapse in margin-top review"></div>
+            <div style="border: 1px solid #cccccc;height:35px;background-color:#EDF4ED;width:150px;padding:0 10px;"
+                 data-toggle="collapse" data-target="#demo5">其他</div>
+            <div id="demo5" class="collapse in margin-top review"></div>
+        </div>
+        <div class="col-md-8">
+            <table class="table table-striped col-md-12">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>类型</th>
+                        <th>数值</th>
+                        <th>备注</th>
+                        <th>操作1</th>
+                        <th>操作2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>想读</td>
+                        <td>1</td>
+                        <td>未阅读，标记用户感兴趣的图书</td>
+                        <td style="color:blue;">修改</td>
+                        <td style="color:blue;">删除</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>已读</td>
+                        <td>1</td>
+                        <td>用户已阅读的图书</td>
+                        <td style="color:blue;">修改</td>
+                        <td style="color:blue;">删除</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>书评字数小于30</td>
+                        <td>2</td>
+                        <td>用户对图书的简要评论</td>
+                        <td style="color:blue;">修改</td>
+                        <td style="color:blue;">删除</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>书评字数30至100</td>
+                        <td>3</td>
+                        <td>用户对图书的一般评论</td>
+                        <td style="color:blue;">修改</td>
+                        <td style="color:blue;">删除</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>书评字数大于100</td>
+                        <td>4</td>
+                        <td>用户对图书的详尽评论</td>
+                        <td style="color:blue;">修改</td>
+                        <td style="color:blue;">删除</td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation" style="float:right;">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div style="clear:both;"></div>
+            @*<div style="margin:20px 0;">创建新的权重规则，请点击<b style="color:blue;">这里</b></div>*@
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/controllers/weight.index.controller.js"></script>

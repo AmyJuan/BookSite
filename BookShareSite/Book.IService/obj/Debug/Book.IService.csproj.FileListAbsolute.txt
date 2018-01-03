@@ -1,0 +1,5 @@
+C:\practice\BookShareSite\Book.IService\bin\Debug\Book.IService.dll
+C:\practice\BookShareSite\Book.IService\bin\Debug\Book.IService.pdb
+C:\practice\BookShareSite\Book.IService\obj\Debug\Book.IService.dll
+C:\practice\BookShareSite\Book.IService\obj\Debug\Book.IService.pdb
+C:\practice\BookShareSite\Book.IService\obj\Debug\Book.IService.csprojResolveAssemblyReference.cache

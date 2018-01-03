@@ -1,0 +1,15 @@
+﻿<img class="col-md-1" style="width:140px;height:160px;" ng-src="{{book.Image}}" />
+<div>
+    <div class="margin-bottom">
+        <div class="h4">Title: </div>
+        <span class="overflow">{{book.Title}}</span>
+    </div>
+    <div class="margin-bottom" ng-if="!!book.OriginTitle">
+        <div class="h4">OriginTitle: </div>
+        <span class="">{{book.OriginTitle}}</span>
+    </div>
+    <div ng-if="!!book.Authors[0]">
+        <div class="h4">Authors: </div>
+        <span class="">{{book.Authors[0]}}</span>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "BookIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/bookindex.css" rel="stylesheet" />
+<div ng-controller="BookIndexController" ng-cloak>
+    <div class="row margin-top" style="margin-left:-5px;">
+        <input id="search_input" class="col-md-8" ng-model="searchwords" type="text" placeholder="Please input key words." autofocus="true" />
+        <input type="button" class="col-md-1" id="search_btn" ng-click="search()" value="search" />
+    </div>
+    <div class="row">
+        <div class="col-md-5 margin pointer" ng-class="{true: 'book_item_active', false: 'book_item_inactive'}[isActive]" ng-mouseover="isActive = true" 
+             ng-mouseleave="isActive = false" ng-repeat="book in books" ng-click="loadBook(book)">
+            <div class="margin row">@{Html.RenderPartial("_BookItem");}</div>
+        </div>
+    </div>
+    <Pager total="pageTotal" index="pageIndex" previous="previous()" next="next()"></Pager>
+</div>
+
+<script src="~/Scripts/controllers/book.index.controller.js"></script>
+<script src="~/Scripts/services/book.service.js"></script>
+<script src="~/Scripts/directives/pager.directive.js"></script>

@@ -1,0 +1,7 @@
+C:\practice\BookShareSite\Book.Common\bin\Debug\Book.Common.dll
+C:\practice\BookShareSite\Book.Common\bin\Debug\Book.Common.pdb
+C:\practice\BookShareSite\Book.Common\bin\Debug\log4net.dll
+C:\practice\BookShareSite\Book.Common\bin\Debug\log4net.xml
+C:\practice\BookShareSite\Book.Common\obj\Debug\Book.Common.csprojResolveAssemblyReference.cache
+C:\practice\BookShareSite\Book.Common\obj\Debug\Book.Common.dll
+C:\practice\BookShareSite\Book.Common\obj\Debug\Book.Common.pdb

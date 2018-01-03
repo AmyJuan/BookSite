@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "ViewBook";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/booview.css" rel="stylesheet" />
+<div class="row margin-top" ng-controller="BookViewController" ng-cloak>
+    @*<div class="row margin-bottom margin-left-clear line">*@
+    @*<button class="btn btn-default" ng-click="back()">返回</button>*@
+    @*<button class="btn btn-default" ng-click="getReviews()">Get Reviews</button>*@
+    @*</div>*@
+    <div class="row margin-bottom line margin-top">@{Html.RenderPartial("_BookItem");}</div>
+    <div class="row margin-bottom margin-left-clear">
+        <button class="btn btn-sm btn-default">想读</button>
+        <button class="btn btn-sm btn-primary">已读</button>
+    </div>
+    <div class="row margin-left-clear line">
+        <div class="h4">简介</div>
+        {{book.Summary}}
+    </div>
+    <div class="row margin-left-clear" ng-if="reviews.length>0">
+        <div class="large-margin-bottom margin-top">
+            <span style="font-size:20px;font-weight:bold">书评汇总 <a style="font-size:13px;">(更多)</a></span>
+            <span class="glyphicon glyphicon-plus text-green float-right pointer" ng-click="addReview()">写书评</span>
+        </div>
+        <div class="line" ng-repeat="item in reviews">
+            <div class="margin-bottom small-margin-bottom" ng-click="goUser(item.UserId)">
+                <img class="head pointer" ng-src="{{item.Image}}" />
+                <span>{{item.UserName}}</span>
+            </div>
+            <div>{{item.Content}}</div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/controllers/book.view.controller.js"></script>
+<script src="~/Scripts/services/book.service.js"></script>
+<script src="~/Scripts/services/util.service.js"></script>

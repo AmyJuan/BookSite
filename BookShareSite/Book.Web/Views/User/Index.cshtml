@@ -1,0 +1,121 @@
+﻿
+@{
+    ViewBag.Title = "Emily";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/user.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+<div class="row margin-top" ng-controller="UserIndexController" ng-cloak>
+    @*<div class="row margin-bottom margin-left-clear line">
+            <button class="btn btn-default" ng-click="getBooks()">Get Books</button>
+            <span style="color:red;">{{addResult}}</span>
+        </div>*@
+    <div class="row">
+        <img ng-src="{{user.Image}}" class="float-left" style="width:100px;height:100px;border-radius:50px;" />
+        <div class="margin-left float-left">
+            <div class="margin-bottom"><b>姓名: </b>{{user.Name}}</div>
+            <div class="margin-bottom"><b>ID: </b>{{user.Uid}}</div>
+            @*<div><b>时间: </b>{{user.CreateStr}}</div>*@
+            <div><b>时间: </b>2016-4-17</div>
+        </div>
+        <div class="float-right"><a>(重新编辑)</a></div>
+    </div>
+    <div class="row margin-top border_dashed">
+        <div class="margin">
+            Anderson Cooper
+            理想徘徊十字路口 不知道往哪边走 信心一路上低着头 数着脚下的石头
+            Ed Miliband
+            我世界纵没理想 对你却有着妄想
+
+            Faye Wong
+            有生之年狭路相逢 终不能幸免 手心忽然长出纠缠的曲线
+            The Cranberries
+            喜悦出于巧合 眼泪何必固执 走完同一条街 回到两个世界
+            Bon Jovi
+            当四月的天空 忽然下起雪霜 就会想起信仰
+            Bigbang
+            怀念都太奢侈 只好羡慕谁年少无知
+        </div>
+    </div>
+    @*<div><a href="{{user.Alt}}">Maybe you want to go there.</a></div>*@
+    <div class="row  large-margin-top">
+        <b>我的书评</b>
+        <a>(全部 43)</a>
+    </div>
+    <div class="row large-margin-top">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:70px;" ng-src="https://img1.doubanio.com/mpic/s2659208.jpg" src="https://img1.doubanio.com/mpic/s2659208.jpg">
+            <div>月亮和六便士</div>
+        </div>
+        <div class="margin-left col-md-10">
+            世界是无情的，残酷的。 我们生到人世间没有人知道为了什么，我们死后没有人知道到何处去。
+            我们自甘卑屈。我们必须看到冷清寂寥的美妙。
+            在生活中我们一定不要出风头、露头角，惹起命运对我们注目。
+            让我们去寻求那些淳朴、敦厚的人的爱情吧。
+            他们的愚昧远比我们的知识更为可贵。
+            让我们保持着沉默，满足于自己小小的天地，像他们一样平易温顺吧。这就是生活的智慧。
+        </div>
+    </div>
+    <div class="row large-margin-top">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:70px;" ng-src="https://img1.doubanio.com/mpic/s4243447.jpg" src="https://img1.doubanio.com/mpic/s4243447.jpg">
+            <div>送你一颗子弹</div>
+        </div>
+        <div class="margin-left col-md-10">
+            那些与你毫无关系的人，就是毫无关系的，永远是毫无关系的。从认识的第一天开始，其实你就知道。
+            就算是笑得甜甜蜜蜜，就算是有无关痒痛的来往，就算你努力经营这段关系。
+            而那些与你有关的，就是与你有关的，是逃也逃不掉的，就算你们只见过三次，就算你们三年彼此才搭理一次，
+            就算是你简直想不起他或者她的样子，就算是你们隔着十万八千里。
+            有些人注定是你生命里的癌症，而有些人只是一个喷嚏而已。这一切，据说都是“因了冥冥中的缘分”。
+        </div>
+    </div>
+    <div class="row large-margin-top large-margin-bottom">
+        <div class="margin-left float-left">
+            <img style="width:70px;height:70px;" ng-src="https://img3.doubanio.com/mpic/s4468484.jpg" src="https://img3.doubanio.com/mpic/s4468484.jpg">
+            <div>局外人</div>
+        </div>
+        <div class="margin-left col-md-10">
+            我以这种方式生活过，我也可能以另外一种方式生活，我干过这，没有干过那，我做过这样的事，而没有做过那样的事。
+            而以后呢？似乎我过去一直等待的就是这一分钟，就是也许我会被判无罪的黎明。
+            没有任何东西，没有任何东西是有重要性的，我很明白是为什么。他也知道为什么。
+            在我所度过的整个那段荒唐生活期间，一种阴暗的气息从我未来前途的深处向我扑面而来，它穿越了尚未来到的岁月，
+            所到之处，使人们曾经向我建议的所有一切彼此之间不再有高下优劣的差别了，未来的生活也不比我以往的生活更真切实在。
+        </div>
+    </div>
+    <hr class="margin" />
+    <div class="row  large-margin-top">
+        <b>我的标记</b>
+        <a>(全部 138)</a>
+    </div>
+    <div class="row large-margin-top large-margin-bottom">
+        <div class="col-md-4 border">
+            <img style="width:70px;height:70px;" ng-src="https://img3.doubanio.com/mpic/s3357241.jpg" src="https://img3.doubanio.com/mpic/s3357241.jpg">
+            <div><b>增长与波动</b></div>
+        </div>
+        <div class="col-md-4 border">
+            <img style="width:70px;height:70px;" ng-src="https://img3.doubanio.com/mpic/s29011411.jpg" src="https://img3.doubanio.com/mpic/s29011411.jpg">
+            <div><b>最后的华尔兹</b></div>
+        </div>
+        <div class="col-md-4 border">
+            <img style="width:70px;height:70px;" ng-src="https://img3.doubanio.com/mpic/s11193945.jpg" src="https://img3.doubanio.com/mpic/s11193945.jpg">
+            <div><b>帝国造就了我</b></div>
+        </div>
+    </div>
+    <div class="row large-margin-top large-margin-bottom">
+        <div class="col-md-4 border">
+            <img style="width:70px;height:70px;" ng-src="https://img1.doubanio.com/mpic/s4644508.jpg" src="https://img1.doubanio.com/mpic/s4644508.jpg">
+            <div><b>晚唐</b></div>
+        </div>
+        <div class="col-md-4 border">
+            <img style="width:70px;height:70px;" ng-src="https://img1.doubanio.com/mpic/s2659208.jpg" src="https://img1.doubanio.com/mpic/s2659208.jpg">
+            <div><b>月亮和六便士</b></div>
+        </div>
+        <div class="col-md-4 border">
+            <img style="width:70px;height:70px;" ng-src="https://img1.doubanio.com/mpic/s2167779.jpg" src="https://img1.doubanio.com/mpic/s2167779.jpg">
+            <div><b>非理性繁荣</b></div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/controllers/user.index.controller.js"></script>
+<script src="~/Scripts/services/user.service.js"></script>
+<script src="~/Scripts/services/util.service.js"></script>

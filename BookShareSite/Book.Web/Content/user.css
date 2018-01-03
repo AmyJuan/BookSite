@@ -1,0 +1,14 @@
+﻿.border_dashed {
+    border: 2px dashed #CCCCCC;
+}
+.review {
+    border: 1px solid #CCCCCC;
+    background-color: #CCCCCC;
+    padding: 10px;
+}
+.mark {
+    border-top: 2px dashed #ddd;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+

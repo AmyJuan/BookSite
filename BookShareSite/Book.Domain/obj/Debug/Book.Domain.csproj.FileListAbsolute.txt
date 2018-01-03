@@ -1,0 +1,9 @@
+C:\practice\BookShareSite\Book.Domain\bin\Debug\Book.Domain.dll
+C:\practice\BookShareSite\Book.Domain\bin\Debug\Book.Domain.pdb
+C:\practice\BookShareSite\Book.Domain\obj\Debug\Book.Domain.csprojResolveAssemblyReference.cache
+C:\practice\BookShareSite\Book.Domain\obj\Debug\Book.Domain.dll
+C:\practice\BookShareSite\Book.Domain\obj\Debug\Book.Domain.pdb
+C:\practice\BookShareSite\Book.Domain\bin\Debug\Book.Dao.dll
+C:\practice\BookShareSite\Book.Domain\bin\Debug\EntityFramework.dll
+C:\practice\BookShareSite\Book.Domain\bin\Debug\Book.Dao.pdb
+C:\practice\BookShareSite\Book.Domain\bin\Debug\EntityFramework.xml
