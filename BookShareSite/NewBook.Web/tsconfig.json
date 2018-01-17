@@ -1,0 +1,17 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": [ "dom", "es6" ],
+    "target": "es5",
+    "noImplicitAny": true,
+    "allowUnreachableCode": true,
+    "allowUnusedLabels": true,
+    "removeComments": true,
+    "preserveConstEnums": false,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "baseUrl": "."
+  }
+
+}

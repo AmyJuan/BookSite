@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book.Dao", "Book.Dao\Book.Dao.csproj", "{BE2BC3F2-E6FC-4ED8-B6CC-503F995F524A}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book.Web", "Book.Web\Book.Web.csproj", "{3F2DA791-1AF3-4840-BE0A-4A075221F3EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book.Common", "Book.Common\Book.Common.csproj", "{73FE8234-0C47-4952-A280-C1F08D731181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewBook.Web", "NewBook.Web\NewBook.Web.csproj", "{B6C9DC98-317E-47D2-9434-E7B47045508C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{73FE8234-0C47-4952-A280-C1F08D731181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73FE8234-0C47-4952-A280-C1F08D731181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73FE8234-0C47-4952-A280-C1F08D731181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C9DC98-317E-47D2-9434-E7B47045508C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C9DC98-317E-47D2-9434-E7B47045508C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C9DC98-317E-47D2-9434-E7B47045508C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C9DC98-317E-47D2-9434-E7B47045508C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
